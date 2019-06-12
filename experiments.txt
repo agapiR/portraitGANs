@@ -1,0 +1,11 @@
+TRAIN:
+python train.py --dataroot face_data/biased/ --name self_attn_cyclegan_2_1_old --model cycle_gan --gpu_ids 3 --self_attention --log --verbose
+
+
+TEST:
+python test.py --dataroot ./face_data/new_test_set/ --name self_attn_cyclegan_old_data --model cycle_gan --gpu_ids 3 --self_attention --results_dir visualize_attn --verbose --num_test 5
+
+
+images:
+convert 4.png 6.png +append test.png (horizontal)
+convert 4.png 6.png -append test.png (vertical)

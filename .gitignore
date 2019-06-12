@@ -249,3 +249,6 @@ TSWLatexianTemp*
 
 # pytorch saved models
 *.pth
+
+# large .mat storage files 
+*.mat
